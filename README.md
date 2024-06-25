@@ -75,7 +75,7 @@ var _0x73b2=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x2F\x70\x6C\x61\x79\x65\x72\x2
 
 ### Use Cases
 
-#### Example 1: Detection of Re-streaming Infringers
+#### Detection of Re-streaming Infringers
 **Situation:** StreamGuardian is used to identify users who are re-streaming signals by screen capturing streaming content.
 
 ##### Process
@@ -92,7 +92,7 @@ var _0x73b2=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x2F\x70\x6C\x61\x79\x65\x72\x2
 
 **Analysis and Integration:** The collected data is analyzed and integrated into dashboards for monitoring and tracking.
 
-#### Example 2: Improving Security and Content Control
+#### Improving Security and Content Control
 **Situation:** StreamGuardian helps improve security and control of content on streaming platforms, ensuring that content is not pirated or re-streamed illegally.
 
 ##### Process
