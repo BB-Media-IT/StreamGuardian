@@ -1,12 +1,12 @@
 # API v1 Documentation - Stream Guardian
 
 ## General Information
-- **ContactEmail:** support@bb-media.com
-- **Developers:** Joel Moreno, Nicolas Walitzky, Pedro Giustinian
-- **PoweredBy:** BB Media
-- **VersionName:** Stream Guardian
-- **VersionNumber:** 1.0
-- **VersionTagline:** 🤟 let it rock
+- **contactEmail:** support@bb-media.com
+- **developers:** Joel Moreno, Nicolas Walitzky, Pedro Giustinian
+- **poweredBy:** BB Media
+- **versionName:** Stream Guardian
+- **versionNumber:** 1.0
+- **versionTagline:** 🤟 let it rock
 
 ## Endpoints
 
@@ -18,12 +18,12 @@
 **Example Response:**
 ```json
 {
-    "ContactEmail": "support@bb-media.com",
-    "Developers": ["Joel Moreno", "Nicolas Walitzky", "Pedro Giustinian"],
-    "PoweredBy": "BB Media",
-    "VersionName": "Stream Guardian",
-    "VersionNumber": 1.0,
-    "VersionTagline": "🤟 let it rock"
+    "contactEmail": "support@bb-media.com",
+    "developers": ["Joel Moreno", "Nicolas Walitzky", "Pedro Giustinian"],
+    "poweredBy": "BB Media",
+    "versionName": "Stream Guardian",
+    "versionNumber": 1.0,
+    "versionTagline": "🤟 let it rock"
 }
 ```
 
