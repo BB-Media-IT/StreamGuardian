@@ -16,16 +16,22 @@ This method involves inserting a script written in JavaScript that retrieves dat
 
 This method involves generating a plugin directly from the player. It essentially follows the same principle: retrieving the active user's information, anonymizing the data, and creating the QR code from the player level. This approach aims to cover 100% of the devices.
 
+---
+
 ### System Requirements
 
 - **Web**: The application must allow JavaScript.
 - **Plugin**: Compatibility depends on the OTT player's requirements.
+
+---
 
 ### Installation and Configuration
 
 The installation of StreamGuardian requires coordination with the team responsible for the application to insert the code into the frontend, which will render according to the user. For the plugin version, it depends on the player and also requires coordination with the responsible team.
 
 After configuration, it is ideal to perform tests during the early morning hours or, if possible, in a development version of the application that has internet access or is on a test server.
+
+---
 
 ### Web Details
 
@@ -35,6 +41,8 @@ The obfuscated JavaScript script should be inserted into the URL or path where t
 var _0x73b2=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x2F\x70\x6C\x61\x79\x65\x72\x2F\x6C\x69\x76\x65\x2F","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x70\x61\x74\x68\x6E\x61\x6D\x65","\x75\x73\x65\x72","\x67\x65\x74\x49\x74\x65\x6D","\x70\x61\x72\x73\x65","\x64\x65\x76\x69\x63\x65\x49\x64","\x68\x74\x74\x70\x3A\x2F\x2F\x31\x32\x37\x2E\x30\x2E\x30\x2E\x31\x3A\x38\x30\x30\x30\x2F\x66\x69\x6E\x67\x65\x72","\x50\x4F\x53\x54","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x6A\x73\x6F\x6E","","\x71\x72\x5F\x69\x6D\x61\x67\x65","\x6C\x6F\x67","\x64\x69\x76","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x68\x65\x69\x67\x68\x74","\x73\x74\x79\x6C\x65","\x31\x30\x30\x70\x78","\x77\x69\x64\x74\x68","\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x61\x62\x73\x6F\x6C\x75\x74\x65","\x7A\x49\x6E\x64\x65\x78","\x62\x6F\x74\x74\x6F\x6D","\x32\x30\x70\x78","\x72\x69\x67\x68\x74","\x69\x6D\x67","\x73\x72\x63","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x2E\x64\x74\x76\x2D\x63\x6F\x6D\x6D\x6F\x6E\x2D\x63\x2D\x73\x68\x61\x6B\x61\x2D\x70\x6C\x61\x79\x65\x72","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72"];var URLactual=window[_0x73b2[0]];if(URLactual[_0x73b2[3]][_0x73b2[2]](_0x73b2[1])){var user_info=JSON[_0x73b2[6]](localStorage[_0x73b2[5]](_0x73b2[4]));user_info[_0x73b2[7]]= localStorage[_0x73b2[5]](_0x73b2[7]);const response= await fetch(_0x73b2[8],{method:_0x73b2[9],headers:{'\x41\x63\x63\x65\x70\x74':_0x73b2[10],'\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65':_0x73b2[10]},body:JSON[_0x73b2[11]](user_info)});const post= await response[_0x73b2[12]]();if(post!= _0x73b2[13]){console[_0x73b2[15]](post[_0x73b2[14]]);const div=document[_0x73b2[17]](_0x73b2[16]);div[_0x73b2[19]][_0x73b2[18]]= _0x73b2[20];div[_0x73b2[19]][_0x73b2[21]]= _0x73b2[20];div[_0x73b2[19]][_0x73b2[22]]= _0x73b2[23];div[_0x73b2[19]][_0x73b2[24]]= 1000000;div[_0x73b2[19]][_0x73b2[25]]= _0x73b2[26];div[_0x73b2[19]][_0x73b2[27]]= _0x73b2[26];const img=document[_0x73b2[17]](_0x73b2[28]);img[_0x73b2[29]]= post[_0x73b2[14]];img[_0x73b2[18]]= 100;div[_0x73b2[30]](img);document[_0x73b2[32]](_0x73b2[31])[_0x73b2[30]](div)}}
 ```
 
+---
+
 ### Plugin Details (in development)
 
 **Compatibility:** The plugin's compatibility will depend on the partner.
@@ -43,12 +51,16 @@ var _0x73b2=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x2F\x70\x6C\x61\x79\x65\x72\x2
 
 **Functionality:** The plugin will activate based on the parameters set in the API, including channel name, time, QR code appearance frequency, and display time. This applies to both the web version and the plugin version.
 
+---
+
 ### QR Code Functionality
 **Collected Information:** Information such as the user's email, ID, and location is collected, if possible.
 
 **Data Anonymization:** The data is anonymized using hashing algorithms like MD5 and SHA-256.
 
 **Privacy and Security:** No personal data is stored; the data stored is only for statistical and legal purposes.
+
+---
 
 ### Operational Use
 **Manual Process:** The BB Media team uses an internal application on their mobile phones to scan QR codes.
@@ -58,6 +70,8 @@ var _0x73b2=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x2F\x70\x6C\x61\x79\x65\x72\x2
 **Automation:** BB Media also has software that systematically and automatically explores the requested URLs. Using AI, it detects the QR code and performs the same process as the manual one.
 
 **Analysis and Integration:** The collected data is analyzed and integrated into dashboards for efficient monitoring and control.
+
+---
 
 ### Use Cases
 
@@ -89,6 +103,8 @@ var _0x73b2=["\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x2F\x70\x6C\x61\x79\x65\x72\x2
 
 **Quick Actions:** The BB Media team can take quick actions to identify and mitigate infringements based on anonymized data and alerts received.
 
+---
+
 ### Troubleshooting
 Common Issues and Solutions
 
@@ -104,6 +120,8 @@ Common Issues and Solutions
 
 **Solution:** Check the connectivity with the API and ensure that the mobile device has internet access. Review the logs of the internal application for any errors.
 
+---
+
 ### Frequently Asked Questions (FAQ)
 **What user information is collected?** Information such as the user's email, ID, and location is collected, if possible, and anonymized.
 
@@ -112,6 +130,8 @@ Common Issues and Solutions
 **Which video players are compatible with the StreamGuardian plugin?** Compatibility depends on the partner and the player used. Integration will be determined by the responsible team.
 
 **How can users contact the support team?** Users can contact the support team via email at support@bb-media.com
+
+---
 
 ### Contacts and Support
 For any inquiries or technical issues, you can contact the BB Media support team:
