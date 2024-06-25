@@ -2,6 +2,8 @@
   <img src="https://github.com/BB-Media-IT/StreamGuardian/assets/4085605/1a168e49-91e2-48d2-9442-e34354e0ba6b" height=200/>
 </p>
 
+<p align="right"><a><img src="https://github.com/BB-Media-IT/StreamGuardian/assets/4085605/6a5bfe68-3da4-4e08-8838-d821d9cedbd0" height=15/> API v1</a></p>
+
 ## Stream Guardian 
 Stream Guardian is an advanced monitoring and content protection solution for streaming platforms.
 
