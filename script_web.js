@@ -62,11 +62,9 @@ function commonCampaignExecution(displayDuration) {
     }, displayDuration);
 }
 
-// Crear el QR
 async function createdCampaignQR(){
     console.log("Save campaign to display");
 
-    // Información Requerida 
     var user_info = JSON.parse( localStorage.getItem('user') );
     user_info['deviceId'] = localStorage.getItem('deviceId');
     
@@ -77,8 +75,7 @@ async function createdCampaignQR(){
     var URLactual = window.location;
     user_info['channel'] = URLactual.pathname;
     localStorage.setItem('campaign_channel', URLactual.pathname);
-    // Información Requerida 
-    
+
     const response = await fetch('https://streamguardian.bb-media.com/finger', {
         method: 'POST',
         headers: {
@@ -91,7 +88,6 @@ async function createdCampaignQR(){
     localStorage.setItem('campaign_qr', JSON.stringify(post.qr_image));
 }
 
-// Iniciar la campaña
 fetch('https://streamguardian.bb-media.com/campaign?tag=DGO')
 .then(response => response.json())
 .then(data => {
